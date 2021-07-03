@@ -1,0 +1,107 @@
+@font-face {
+	font-family: TGN;
+	src: url("fonts/TGNeuramatica-Black.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: TGN;
+	src: url("fonts/TGNeuramatica-Regular.ttf");
+	font-weight: normal;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+}
+
+body {
+		background-image: url("site_bckgr.png");
+		background-size: cover;
+		/*width: 100%;
+		height: 100%;
+		margin: 0%;*/
+}
+
+@keyframes fadeIn {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+.fade {
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.header {
+	font-family: TGN;
+	font-weight: bold;
+	color: #7F99DB;
+	font-size: 100px;
+}
+
+@keyframes slide_down {
+	from {top: -10px;}
+	to {top: 0px;}
+}
+
+.header_container {
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	pointer-events: none;
+}
+
+.sidebar {
+	position: absolute;
+	text-align: center;
+	background-color: black;
+	opacity: 50%;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-evenly;
+}
+
+.sidebar_toggle {
+	position: relative;
+	left: 100%;
+}
+
+.full_sidebar {
+	transition: 0.8s cubic-bezier(.23,1,.32,1);
+	position: absolute;
+	top: 0;
+	left: -15%;
+	width: 15%;
+	height: 100%;
+}
+
+.sidebar_button {
+	font-family: TGN;
+	font-size: 40px;
+	border: none;
+	background-color: transparent;
+	color: #7F99DB;
+	transition: 0.5s;
+}
+
+.sidebar_button:hover {
+	transition: 0.5s;
+	transform: scale(115%);
+	cursor: pointer;
+	color: white;
+}
