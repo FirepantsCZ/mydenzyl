@@ -17,3 +17,4 @@ function toggle_sidebar() {
 	
 	document.getElementById("full_sidebar").style.left = sidebarStatus;
 }
+//git web vscode
